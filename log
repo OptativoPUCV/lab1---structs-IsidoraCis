@@ -70,3 +70,16 @@ Thu 16 Mar 2023 03:26:54 PM UTC:
  tests:  2|5
 total_score: 20/70
 2d866d5
+Thu 16 Mar 2023 03:34:41 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearPersona’:
+exercises.c:62:27: error: expected expression before ‘]’ token
+   62 |   strcpy(p->nombre,nombre[]);
+      |                           ^
+exercises.c:63:22: error: expected expression before ‘]’ token
+   63 |   strcpy(p->rut, rut[]);
+      |                      ^
+Compilation failed
+e0e847b
