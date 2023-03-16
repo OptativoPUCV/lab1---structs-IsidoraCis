@@ -221,3 +221,13 @@ exercises.c:116:16: error: invalid type argument of unary ‘*’ (have ‘Vecto
       |                ^~~~~
 Compilation failed
 6087fd4
+Thu 16 Mar 2023 03:59:34 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:116:33: error: lvalue required as left operand of assignment
+  116 |       a->datos[j] + b->datos[j] = c->datos[j];
+      |                                 ^
+Compilation failed
+bb998ca
