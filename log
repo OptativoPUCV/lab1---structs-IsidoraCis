@@ -208,3 +208,16 @@ exercises.c:116:13: error: invalid operands to binary + (have ‘Vector’ and �
       |         Vector Vector
 Compilation failed
 e0d4f51
+Thu 16 Mar 2023 03:58:08 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:116:8: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  116 |       (*a[j] + *b[j]) = c[j];
+      |        ^~~~~
+exercises.c:116:16: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  116 |       (*a[j] + *b[j]) = c[j];
+      |                ^~~~~
+Compilation failed
+6087fd4
