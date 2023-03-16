@@ -82,7 +82,7 @@ Vector * crearVector(int n) {
   Vector * v = (Vector *) malloc(sizeof(Vector));
   if(v == NULL) exit(EXIT_FAILURE);
   v->capacidad = n;
-  v->datos = (int *) malloc(sizeof(int));
+  v->datos = (int *) malloc(n * sizeof(int));
    return v;
 }
 
