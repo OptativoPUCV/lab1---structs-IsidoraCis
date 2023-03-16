@@ -8,3 +8,37 @@ Thu 16 Mar 2023 03:14:43 PM UTC:
  tests:  1|6
 total_score: 10/70
 6ad5640
+Thu 16 Mar 2023 03:24:30 PM UTC: 
+ exercises.c | 13 +++++++++++++
+ 1 file changed, 13 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:28:7: error: ‘max’ redeclared as different kind of symbol
+   28 |   int max=0;
+      |       ^~~
+exercises.c:27:38: note: previous definition of ‘max’ was here
+   27 | void arrayMaxMin(int *a, int n, int *max, int *min) {
+      |                                 ~~~~~^~~
+exercises.c:29:7: error: ‘min’ redeclared as different kind of symbol
+   29 |   int min = *a[0];
+      |       ^~~
+exercises.c:27:48: note: previous definition of ‘min’ was here
+   27 | void arrayMaxMin(int *a, int n, int *max, int *min) {
+      |                                           ~~~~~^~~
+exercises.c:29:13: error: invalid type argument of unary ‘*’ (have ‘int’)
+   29 |   int min = *a[0];
+      |             ^~~~~
+exercises.c:32:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+   32 |       if(*a[i]>max)
+      |          ^~~~~
+exercises.c:34:13: error: invalid type argument of unary ‘*’ (have ‘int’)
+   34 |         max=*a[i];
+      |             ^~~~~
+exercises.c:36:10: error: invalid type argument of unary ‘*’ (have ‘int’)
+   36 |       if(*a[i]<min)
+      |          ^~~~~
+exercises.c:38:13: error: invalid type argument of unary ‘*’ (have ‘int’)
+   38 |         min=*a[i];
+      |             ^~~~~
+Compilation failed
+f5452d2
