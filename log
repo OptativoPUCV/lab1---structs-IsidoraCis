@@ -100,3 +100,22 @@ exercises.c:82:11: error: unused variable ‘v’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 214d422
+Thu 16 Mar 2023 03:39:27 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:83:9: error: invalid operands to binary == (have ‘Vector’ and ‘void *’)
+   83 |   if(*v == NULL) exit(EXIT_FAILURE);
+      |      ~~ ^~
+      |      |
+      |      Vector
+exercises.c:84:11: error: incompatible types when returning type ‘Vector’ but ‘Vector *’ was expected
+   84 |    return *v;
+      |           ^~
+exercises.c:85:1: error: control reaches end of non-void function [-Werror=return-type]
+   85 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+80217e3
